@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mobile Repair Services in Kalyan | Shiv Adnya Mobile Shop</title>
+
+    <meta name="description"
+        content="Shiv Adnya Mobile Shop provides affordable mobile repair services in Kalyan including display, battery, charging port, speaker, microphone, camera and software repairs.">
+
+    <meta name="keywords"
+        content="mobile repair Kalyan, mobile repairing shop Kalyan, phone repair Kalyan, display replacement Kalyan, battery replacement Kalyan, Shiv Adnya Mobile Shop">
+
+    <meta name="author" content="Shiv Adnya Mobile Shop">
+
+    <meta name="theme-color" content="#f5f7fb">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: "Inter", sans-serif;
+            background: #f5f7fb;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        button {
+            font-family: inherit;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid #e6eaf0;
+        }
+
+        .nav-container {
+            max-width: 1150px;
+            margin: auto;
+            min-height: 72px;
+            padding: 0 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 21px;
+            font-weight: 800;
+            color: #172033;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #1687ff, #5c4dff);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 800;
+            font-size: 18px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            font-size: 14px;
+            font-weight: 600;
+            color: #566074;
+            transition: 0.25s;
+        }
+
+        .nav-links a:hover {
+            color: #1677ff;
+        }
+
+        .nav-repair {
+            color: #1677ff !important;
+        }
+
+        .menu-btn {
+            display: none;
+            border: none;
+            background: transparent;
+            font-size: 27px;
+            cursor: pointer;
+        }
+
+        /* HERO */
+
+        .hero {
+            max-width: 1150px;
+            margin: auto;
+            padding: 75px 20px 65px;
+
+            display: grid;
+            grid-template-columns: 1.15fr 0.85fr;
+            gap: 45px;
+            align-items: center;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 13px;
+            border-radius: 50px;
+            background: #eaf3ff;
+            color: #1677ff;
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .badge span {
+            width: 7px;
+            height: 7px;
+            border-radius: 50%;
+            background: #20b26b;
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 65px);
+            line-height: 1.05;
+            letter-spacing: -2px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 strong {
+            color: #1677ff;
+        }
+
+        .hero p {
+            max-width: 620px;
+            color: #667085;
+            font-size: 17px;
+            margin-bottom: 28px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            padding: 13px 20px;
+            border-radius: 11px;
+            font-size: 14px;
+            font-weight: 700;
+            transition: 0.25s;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #1677ff;
+            color: white;
+            box-shadow: 0 8px 22px rgba(22, 119, 255, 0.20);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            background: #0967e8;
+        }
+
+        .btn-secondary {
+            background: white;
+            color: #172033;
+            border: 1px solid #dfe4eb;
+        }
+
+        .btn-secondary:hover {
+            transform: translateY(-2px);
+            border-color: #1677ff;
+            color: #1677ff;
+        }
+
+        .hero-card {
+            background: white;
+            border: 1px solid #e3e8ef;
+            border-radius: 25px;
+            padding: 28px;
+            box-shadow: 0 20px 55px rgba(31, 41, 55, 0.08);
+        }
+
+        .phone-icon {
+            width: 65px;
+            height: 65px;
+            border-radius: 18px;
+            background: #eaf3ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 31px;
+            margin-bottom: 20px;
+        }
+
+        .hero-card h3 {
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+
+        .hero-card p {
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .quick-info {
+            display: grid;
+            gap: 11px;
+        }
+
+        .info-row {
+            display: flex;
+            gap: 11px;
+            align-items: flex-start;
+            font-size: 13px;
+            color: #596579;
+        }
+
+        .info-row b {
+            color: #172033;
+        }
+
+        /* COMMON */
+
+        .section {
+            max-width: 1150px;
+            margin: auto;
+            padding: 70px 20px;
+        }
+
+        .section-heading {
+            text-align: center;
+            max-width: 680px;
+            margin: 0 auto 40px;
+        }
+
+        .section-heading span {
+            color: #1677ff;
+            font-size: 12px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.4px;
+        }
+
+        .section-heading h2 {
+            font-size: clamp(29px, 4vw, 42px);
+            margin: 8px 0 12px;
+            letter-spacing: -1px;
+        }
+
+        .section-heading p {
+            color: #6b7280;
+            font-size: 15px;
+        }
+
+        /* SERVICES */
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+        }
+
+        .service-card {
+            background: white;
+            border: 1px solid #e4e8ee;
+            border-radius: 18px;
+            padding: 24px;
+            transition: 0.25s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(20, 35, 60, 0.08);
+            border-color: #cddff7;
+        }
+
+        .service-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 13px;
+            background: #edf5ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 23px;
+            margin-bottom: 17px;
+        }
+
+        .service-card h3 {
+            font-size: 17px;
+            margin-bottom: 8px;
+        }
+
+        .service-card p {
+            color: #70798a;
+            font-size: 13px;
+            margin-bottom: 13px;
+        }
+
+        .service-list {
+            list-style: none;
+        }
+
+        .service-list li {
+            font-size: 13px;
+            color: #4d596c;
+            padding: 6px 0;
+            border-top: 1px solid #eef1f5;
+        }
+
+        .service-list li::before {
+            content: "✓";
+            color: #1677ff;
+            font-weight: 800;
+            margin-right: 7px;
+        }
+
+        /* PRICING */
+
+        .pricing-section {
+            background: white;
+        }
+
+        .pricing-table-wrap {
+            overflow-x: auto;
+            border-radius: 18px;
+            border: 1px solid #e0e5ec;
+            background: white;
+            box-shadow: 0 12px 35px rgba(20, 35, 60, 0.06);
+        }
+
+        .pricing-table {
+            width: 100%;
+            min-width: 650px;
+            border-collapse: collapse;
+        }
+
+        .pricing-table th,
+        .pricing-table td {
+            padding: 17px 20px;
+            text-align: left;
+            border-bottom: 1px solid #edf0f4;
+        }
+
+        .pricing-table th {
+            background: #f7f9fc;
+            font-size: 13px;
+            color: #526074;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .pricing-table td {
+            font-size: 14px;
+            color: #4e596b;
+        }
+
+        .pricing-table td:first-child {
+            color: #172033;
+            font-weight: 700;
+        }
+
+        .price {
+            color: #1677ff !important;
+            font-weight: 800 !important;
+            white-space: nowrap;
+        }
+
+        .enquiry-btn {
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 8px;
+            background: #edf5ff;
+            color: #1677ff;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .pricing-note {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #747d8d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <div class="logo-icon">SA</div>
+                <span>Shiv Adnya</span>
+            </a>
+
+            <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                ☰
+            </button>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="repair.html" class="nav-repair">Repairs</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <div class="badge">
+                    <span></span>
+                    Mobile Repair Services in Kalyan
+                </div>
+
+                <h1>
+                    Fast & Reliable
+                    <strong>Mobile Repairs</strong>
+                </h1>
+
+                <p>
+                    Get professional mobile repair services at Shiv Adnya
+                    Mobile Shop. From display and battery replacement to
+                    charging, camera, speaker and software problems.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="tel:+918291717525" class="btn btn-primary">
+                        📞 Call Now
+                    </a>
+
+                    <a href="https://wa.me/918291717525?text=Hello%20Shiv%20Adnya%20Mobile%20Shop%2C%20I%20need%20mobile%20repair%20service."
+                        target="_blank"
+                        class="btn btn-secondary">
+                        💬 WhatsApp
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <div class="hero-card">
+
+                <div class="phone-icon">📱</div>
+
+                <h3>Shiv Adnya Mobile Shop</h3>
+
+                <p>
+                    Your local destination for mobile repairs,
+                    accessories and reliable service.
+                </p>
+
+                <div class="quick-info">
+
+                    <div class="info-row">
+                        📞
+                        <span>
+                            <b>82917 17525</b>
+                        </span>
+                    </div>
+
+                    <div class="info-row">
+                        🕐
+                        <span>
+                            <b>10:00 AM – 11:00 PM</b><br>
+                            Every Day
+                        </span>
+                    </div>
+
+                    <div class="info-row">
+                        📍
+                        <span>
+                            Shop No 15, Kokan Vasahat,<br>
+                            Bldg. No. 94, West, HIG Colony,<br>
+                            Chikan Ghar, Kalyan,<br>
+                            Maharashtra 421301
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- REPAIR SERVICES -->
+
+        <section class="section">
+
+            <div class="section-heading">
+                <span>Our Services</span>
+
+                <h2>What Can We Repair?</h2>
+
+                <p>
+                    We handle common smartphone hardware and software
+                    problems with affordable repair options.
+                </p>
+            </div>
+
+
+            <div class="services-grid">
+
+
+                <!-- DISPLAY -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">📱</div>
+
+                    <h3>Display & Screen</h3>
+
+                    <p>
+                        Screen and touch-related problems.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>Display Replacement</li>
+                        <li>Touch Screen Problem</li>
+                        <li>Broken / Cracked Screen</li>
+                        <li>Screen Flickering</li>
+                        <li>Black Display</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- BATTERY -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">🔋</div>
+
+                    <h3>Battery Repair</h3>
+
+                    <p>
+                        Battery performance and replacement services.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>Battery Replacement</li>
+                        <li>Fast Battery Drain</li>
+                        <li>Battery Not Charging</li>
+                        <li>Battery Problem</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- CHARGING -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">🔌</div>
+
+                    <h3>Charging Problems</h3>
+
+                    <p>
+                        Solutions for charging-related issues.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>Charging Port Replacement</li>
+                        <li>Charging Problem</li>
+                        <li>Loose Charging Port</li>
+                        <li>Slow Charging</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- SPEAKER -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">🔊</div>
+
+                    <h3>Speaker & Microphone</h3>
+
+                    <p>
+                        Fix sound and microphone issues.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>Speaker Replacement</li>
+                        <li>Microphone Repair</li>
+                        <li>Low Sound</li>
+                        <li>No Sound</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- CAMERA -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">📷</div>
+
+                    <h3>Camera Repair</h3>
+
+                    <p>
+                        Front and rear camera solutions.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>Front Camera Repair</li>
+                        <li>Back Camera Repair</li>
+                        <li>Camera Glass Replacement</li>
+                        <li>Camera Not Working</li>
+                    </ul>
+
+                </div>
+
+
+                <!-- OTHER -->
+
+                <div class="service-card">
+
+                    <div class="service-icon">🛠️</div>
+
+                    <h3>Other Repairs</h3>
+
+                    <p>
+                        Diagnosis and solutions for other problems.
+                    </p>
+
+                    <ul class="service-list">
+                        <li>Water Damage Inspection</li>
+                        <li>Power / Boot Problem</li>
+                        <li>Software Issue</li>
+                        <li>Network / SIM Problem</li>
+                        <li>Wi-Fi / Bluetooth Problem</li>
+                        <li>Phone Heating Problem</li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+  </section>
+          <!-- PRICING -->
+
+        <section class="pricing-section">
+
+            <div class="section">
+
+                <div class="section-heading">
+
+                    <span>Repair Pricing</span>
+
+                    <h2>Affordable Repair Costs</h2>
+
+                    <p>
+                        Check our starting prices for common mobile
+                        repair services.
+                    </p>
+
+                </div>
+
+
+                <div class="pricing-table-wrap">
+
+                    <table class="pricing-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Repair Service</th>
+                                <th>Starting Price</th>
+                                <th>Enquiry</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody>
+
+                            <tr>
+                                <td>Display Replacement</td>
+                                <td class="price">₹999 onwards</td>
+                                <td>
+                                    <a class="enquiry-btn"
+                                        href="https://wa.me/918291717525?text=Hello%20Shiv%20Adnya%2C%20I%20want%20to%20know%20the%20price%20for%20Display%20Replacement.%20My%20mobile%20model%20is%20%3A"
+                                        target="_blank">
+                                        Get Price
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Battery Replacement</td>
+                                <td class="price">₹699 onwards</td>
+                                <td>
+                                    <a class="enquiry-btn"
+                                        href="https://wa.me/918291717525?text=Hello%20Shiv%20Adnya%2C%20I%20want%20to%20know%20the%20price%20for%20Battery%20Replacement.%20My%20mobile%20model%20is%20%3A"
+                                        target="_blank">
+                                        Get Price
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Charging Port Repair</td>
+                                <td class="price">₹399 onwards</td>
+                                <td>
+                                    <a class="enquiry-btn"
+                                        href="https://wa.me/918291717525?text=Hello%20Shiv%20Adnya%2C%20I%20want%20to%20know%20the%20price%20for%20Charging%20Port%20Repair.%20My%20mobile%20model%20is%20%3A"
+                                        target="_blank">
+                                        Get Price
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Speaker Repair</td>
+                                <td class="price">₹299 onwards</td>
+                                <td>
+                                    <a class="enquiry-btn"
+                                        href="https://wa.me/918291717525?text=Hello%20Shiv%20Adnya%2C%20I%20want%20to%20know%20the%20price%20for%20Speaker%20Repair.%20My%20mobile%20model%20is%20%3A"
+                                        target="_blank">
+                                        Get Price
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Microphone Repair</td>
+                                <td class="price">₹299 onwards</td>
+                                <td>
+                                    <a class="enquiry-btn"
+                                        href="https://wa.me/918291717525?text=Hello%20Shiv%20Adnya%2C%20I%20want%20to%20know%20the%20price%20for%20Microphone%20Repair.%20My%20mobile%20model%20is%20%3A"
+                                        target="_blank">
+                                        Get Price
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Camera Repair</td>
+                                <td class="price">₹499 onwards</td>
+                                <td>
+                                    <a class="enquiry-btn"
+                                        href="https://wa.me/918291717525?text=Hello%20Shiv%20Adnya%2C%20I%20want%20to%20know%20the%20price%20for%20Camera%20Repair.%20My%20mobile%20model%20is%20%3A"
+                                        target="_blank">
+                                        Get Price
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Camera Glass</td>
+                                <td class="price">₹299 onwards</td>
+                                <td>
+                                    <a class="enquiry-btn"
+                                        href="https://wa.me/918291717525?text=Hello%20Shiv%20Adnya%2C%20I%20want%20to%20know%20the%20price%20for%20Camera%20Glass.%20My%20mobile%20model%20is%20%3A"
+                                        target="_blank">
+                                        Get Price
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Software Repair</td>
+                                <td class="price">₹299 onwards</td>
+                                <td>
+                                    <a class="enquiry-btn"
+                                        href="https://wa.me/918291717525?text=Hello%20Shiv%20Adnya%2C%20I%20want%20to%20know%20the%20price%20for%20Software%20Repair.%20My%20mobile%20model%20is%20%3A"
+                                        target="_blank">
+                                        Get Price
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Water Damage Inspection</td>
+                                <td class="price">₹199 onwards</td>
+                                <td>
+                                    <a class="enquiry-btn"
+                                        href="https://wa.me/918291717525?text=Hello%20Shiv%20Adnya%2C%20I%20want%20to%20know%20the%20price%20for%20Water%20Damage%20Inspection.%20My%20mobile%20model%20is%20%3A"
+                                        target="_blank">
+                                        Get Price
+                                    </a>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>Other Hardware Repair</td>
+                                <td class="price">₹299 onwards</td>
+                                <td>
+                                    <a class="enquiry-btn"
+                                        href="https://wa.me/918291717525?text=Hello%20Shiv%20Adnya%2C%20I%20want%20to%20know%20the%20price%20for%20Other%20Hardware%20Repair.%20My%20mobile%20model%20is%20%3A"
+                                        target="_blank">
+                                        Get Price
+                                    </a>
+                                </td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <p class="pricing-note">
+                    * Prices shown are starting prices. Final repair cost
+                    may vary depending on mobile model, spare-part quality,
+                    damage condition and required repair work.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- WHY CHOOSE US -->
+
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span>Why Shiv Adnya?</span>
+
+                <h2>Simple, Reliable & Convenient</h2>
+
+                <p>
+                    Get your phone checked and understand the repair
+                    requirement before proceeding.
+                </p>
+
+            </div>
+
+
+            <div class="services-grid">
+
+                <div class="service-card">
+
+                    <div class="service-icon">💰</div>
+
+                    <h3>Affordable Pricing</h3>
+
+                    <p>
+                        Starting prices are clearly displayed so you
+                        know the approximate repair cost.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">⚡</div>
+
+                    <h3>Quick Service</h3>
+
+                    <p>
+                        Common repairs can often be completed quickly,
+                        depending on the mobile model and parts availability.
+                    </p>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">📱</div>
+
+                    <h3>Multiple Repair Types</h3>
+
+                    <p>
+                        Display, battery, charging, camera, speaker,
+                        microphone and software-related services.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+                <!-- CONTACT / CTA -->
+
+        <section class="section">
+
+            <div class="hero-card"
+                style="max-width: 900px; margin: auto; text-align: center;">
+
+                <div class="phone-icon" style="margin: 0 auto 20px;">
+                    🛠️
+                </div>
+
+                <h2 style="font-size: 32px; margin-bottom: 12px;">
+                    Not Sure What's Wrong With Your Phone?
+                </h2>
+
+                <p style="max-width: 650px; margin: 0 auto 24px;">
+                    Contact Shiv Adnya Mobile Shop or visit our store
+                    in Kalyan for a repair enquiry and diagnosis.
+                </p>
+
+                <div class="hero-buttons"
+                    style="justify-content: center;">
+
+                    <a href="tel:+918291717525"
+                        class="btn btn-primary">
+                        📞 Call 82917 17525
+                    </a>
+
+                    <a href="https://wa.me/918291717525?text=Hello%20Shiv%20Adnya%20Mobile%20Shop%2C%20I%20need%20help%20with%20my%20mobile%20repair."
+                        target="_blank"
+                        class="btn btn-secondary">
+                        💬 WhatsApp Us
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- STORE INFORMATION -->
+
+        <section class="section"
+            style="padding-top: 0;">
+
+            <div class="services-grid">
+
+                <div class="service-card">
+
+                    <div class="service-icon">📍</div>
+
+                    <h3>Visit Our Shop</h3>
+
+                    <p>
+                        Shop No 15, Kokan Vasahat,
+                        Bldg. No. 94, West, HIG Colony,
+                        Chikan Ghar, Kalyan,
+                        Maharashtra 421301
+                    </p>
+
+                    <a
+                        href="https://www.google.com/maps/search/?api=1&query=Shop%20No%2015%2C%20Kokan%20Vasahat%2C%20Bldg.%20No.%2094%2C%20West%2C%20HIG%20Colony%2C%20Chikan%20Ghar%2C%20Kalyan%2C%20Maharashtra%20421301"
+                        target="_blank"
+                        class="btn btn-secondary"
+                        style="margin-top: 10px;">
+                        📍 Open in Google Maps
+                    </a>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">🕐</div>
+
+                    <h3>Opening Hours</h3>
+
+                    <p>
+                        <b>Monday – Sunday</b><br><br>
+                        10:00 AM – 11:00 PM
+                    </p>
+
+                    <a href="tel:+918291717525"
+                        class="btn btn-primary"
+                        style="margin-top: 10px;">
+                        📞 Call Shop
+                    </a>
+
+                </div>
+
+
+                <div class="service-card">
+
+                    <div class="service-icon">📸</div>
+
+                    <h3>Follow Us</h3>
+
+                    <p>
+                        Follow Shiv Adnya Mobile Shop on Instagram
+                        for updates, products and services.
+                    </p>
+
+                    <a href="https://instagram.com/shivadnya_mobile"
+                        target="_blank"
+                        class="btn btn-secondary"
+                        style="margin-top: 10px;">
+                        Instagram
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer
+        style="
+        background: #172033;
+        color: white;
+        padding: 35px 20px;
+        margin-top: 20px;
+        ">
+
+        <div
+            style="
+            max-width: 1150px;
+            margin: auto;
+            text-align: center;
+            ">
+
+            <h3 style="margin-bottom: 8px;">
+                Shiv Adnya Mobile Shop
+            </h3>
+
+            <p
+                style="
+                color: #b8c0ce;
+                font-size: 13px;
+                margin-bottom: 8px;
+                ">
+                Mobile Sales • Accessories • Repair Services
+            </p>
+
+            <p
+                style="
+                color: #b8c0ce;
+                font-size: 13px;
+                ">
+                Shop No 15, Kokan Vasahat, Bldg. No. 94,
+                West, HIG Colony, Chikan Ghar, Kalyan,
+                Maharashtra 421301
+            </p>
+
+            <div
+                style="
+                margin-top: 18px;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+                flex-wrap: wrap;
+                ">
+
+                <a href="tel:+918291717525"
+                    class="btn btn-primary">
+                    📞 82917 17525
+                </a>
+
+                <a href="https://instagram.com/shivadnya_mobile"
+                    target="_blank"
+                    class="btn btn-secondary">
+                    Instagram
+                </a>
+
+            </div>
+
+            <p
+                style="
+                margin-top: 25px;
+                color: #8d98aa;
+                font-size: 12px;
+                ">
+                © 2026 Shiv Adnya Mobile Shop. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        const menuBtn = document.getElementById("menuBtn");
+        const navLinks = document.getElementById("navLinks");
+
+        menuBtn.addEventListener("click", function () {
+
+            if (navLinks.style.display === "flex") {
+                navLinks.style.display = "none";
+            } else {
+                navLinks.style.display = "flex";
+            }
+
+        });
+
+
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                if (window.innerWidth <= 768) {
+                    navLinks.style.display = "none";
+                }
+
+            });
+
+        });
+
+    </script>
+
+
+    <style>
+
+        @media (max-width: 850px) {
+
+            .hero {
+                grid-template-columns: 1fr;
+                padding-top: 50px;
+            }
+
+            .services-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 768px) {
+
+            .menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+
+                display: none;
+
+                position: absolute;
+                top: 72px;
+                left: 0;
+                right: 0;
+
+                background: white;
+
+                padding: 15px 20px;
+
+                flex-direction: column;
+                align-items: flex-start;
+
+                gap: 0;
+
+                border-bottom: 1px solid #e5e9ef;
+
+                box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+
+            }
+
+            .nav-links a {
+                width: 100%;
+                padding: 13px 5px;
+            }
+
+            .hero h1 {
+                letter-spacing: -1.2px;
+            }
+
+        }
+
+
+        @media (max-width: 600px) {
+
+            .hero {
+                padding: 42px 16px 45px;
+            }
+
+            .section {
+                padding: 55px 16px;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-card {
+                padding: 22px;
+                border-radius: 20px;
+            }
+
+            .hero p {
+                font-size: 15px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .section-heading {
+                margin-bottom: 28px;
+            }
+
+            .section-heading h2 {
+                font-size: 29px;
+            }
+
+            .pricing-table-wrap {
+                margin-left: -2px;
+                margin-right: -2px;
+            }
+
+        }
+
+    </style>
+
+</body>
+</html>
