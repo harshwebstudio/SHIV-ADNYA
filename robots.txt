@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://harshwebstudio.github.io/SHIV-ADNYA/sitemap.xml
