@@ -1,32 +1,80 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 
+    <!-- BASIC SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Gallery | Shiv Adnya</title>
+    <title>Mobile Gallery | Shiv Adnya Mobile Shop, Kalyan</title>
 
     <meta name="description"
-        content="Explore mobiles, earphones, chargers and smart watches at Shiv Adnya, Kalyan.">
+        content="Explore smartphones, earphones, chargers, smart watches and mobile accessories at Shiv Adnya Mobile Shop in Chikan Ghar, Kalyan, Maharashtra.">
 
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Shiv Adnya">
+
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- CANONICAL URL -->
+    <link rel="canonical"
+        href="https://harshwebstudio.github.io/SHIV-ADNYA/gallery.html">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+
+    <meta property="og:title"
+        content="Mobile Gallery | Shiv Adnya Mobile Shop, Kalyan">
+
+    <meta property="og:description"
+        content="Explore mobiles, earphones, chargers, smart watches and accessories at Shiv Adnya, Chikan Ghar, Kalyan.">
+
+    <meta property="og:url"
+        content="https://harshwebstudio.github.io/SHIV-ADNYA/gallery.html">
+
+    <meta property="og:image"
+        content="https://harshwebstudio.github.io/SHIV-ADNYA/images/logo.jpg">
+
+    <meta property="og:site_name" content="Shiv Adnya Mobile Shop">
+
+    <!-- TWITTER / X -->
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="twitter:title"
+        content="Mobile Gallery | Shiv Adnya, Kalyan">
+
+    <meta name="twitter:description"
+        content="Discover mobile devices and accessories at Shiv Adnya Mobile Shop in Kalyan.">
+
+    <meta name="twitter:image"
+        content="https://harshwebstudio.github.io/SHIV-ADNYA/images/logo.jpg">
+
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com" crossorigin>
 
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
 
-
+<!-- NAVBAR -->
 <header class="navbar">
 
     <a href="index.html" class="brand">
 
-        <img src="images/logo.jpg" alt="Shiv Adnya Logo">
+        <img
+            src="images/logo.jpg"
+            alt="Shiv Adnya Mobile Shop logo">
 
         <div>
             <strong>Shiv Adnya</strong>
@@ -35,17 +83,32 @@
 
     </a>
 
-    <button class="menu-btn" id="menuBtn">☰</button>
+    <button
+        class="menu-btn"
+        id="menuBtn"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="navMenu"
+        aria-expanded="false">
 
-    <nav id="navMenu">
+        ☰
+
+    </button>
+
+    <nav id="navMenu" aria-label="Main navigation">
+
         <a href="index.html">Home</a>
-        <a href="gallery.html" class="active">Gallery</a>
+
+        <a href="gallery.html" class="active"
+           aria-current="page">Gallery</a>
+
         <a href="contact.html">Contact</a>
+
     </nav>
 
 </header>
 
-
+<!-- PAGE HEADER -->
 <section class="page-header">
 
     <span class="mini-title">OUR COLLECTION</span>
@@ -56,133 +119,143 @@
     </h1>
 
     <p>
-        Browse our range of mobile devices and accessories.
+        Browse our range of mobile devices and accessories
+        at Shiv Adnya Mobile Shop in Kalyan.
     </p>
 
 </section>
 
-
+<!-- PRODUCT GALLERY -->
 <section class="gallery-section">
 
-    <div class="filter-buttons">
+    <div class="filter-buttons" aria-label="Filter products">
 
-        <button class="filter active" data-filter="all">
+        <button class="filter active"
+            type="button" data-filter="all"
+            aria-pressed="true">
             All
         </button>
 
-        <button class="filter" data-filter="mobile">
+        <button class="filter"
+            type="button" data-filter="mobile"
+            aria-pressed="false">
             Mobiles
         </button>
 
-        <button class="filter" data-filter="audio">
+        <button class="filter"
+            type="button" data-filter="audio"
+            aria-pressed="false">
             Earphones
         </button>
 
-        <button class="filter" data-filter="charger">
+        <button class="filter"
+            type="button" data-filter="charger"
+            aria-pressed="false">
             Chargers
         </button>
 
-        <button class="filter" data-filter="watch">
+        <button class="filter"
+            type="button" data-filter="watch"
+            aria-pressed="false">
             Smart Watches
         </button>
 
     </div>
 
-
     <div class="gallery-grid">
-
 
         <div class="product-card" data-category="mobile">
 
             <div class="product-image">
                 <img
                     src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=85"
-                    alt="Smartphone">
+                    alt="Smartphone at Shiv Adnya Mobile Shop"
+                    loading="lazy"
+                    decoding="async">
             </div>
 
             <div class="product-info">
                 <span>MOBILES</span>
-                <h3>Smartphones</h3>
-                <p>Latest mobile devices</p>
+                <h2>Smartphones</h2>
+                <p>Mobile devices for everyday use.</p>
             </div>
 
         </div>
-
 
         <div class="product-card" data-category="audio">
 
             <div class="product-image">
                 <img
                     src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85"
-                    alt="Earphones and headphones">
+                    alt="Audio accessories and headphones"
+                    loading="lazy"
+                    decoding="async">
             </div>
 
             <div class="product-info">
                 <span>AUDIO</span>
-                <h3>Earphones</h3>
-                <p>Audio accessories</p>
+                <h2>Earphones</h2>
+                <p>Audio accessories for music and calls.</p>
             </div>
 
         </div>
-
 
         <div class="product-card" data-category="charger">
 
             <div class="product-image charger-image">
-                <div class="product-symbol">⚡</div>
+                <div class="product-symbol" aria-hidden="true">⚡</div>
             </div>
 
             <div class="product-info">
                 <span>POWER</span>
-                <h3>Chargers</h3>
-                <p>Charging accessories</p>
+                <h2>Chargers</h2>
+                <p>Charging accessories for mobile devices.</p>
             </div>
 
         </div>
-
 
         <div class="product-card" data-category="watch">
 
             <div class="product-image">
                 <img
                     src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=900&q=85"
-                    alt="Smart watch">
+                    alt="Smart watch and wearable technology"
+                    loading="lazy"
+                    decoding="async">
             </div>
 
             <div class="product-info">
                 <span>WEARABLE</span>
-                <h3>Smart Watches</h3>
-                <p>Smart wearable technology</p>
+                <h2>Smart Watches</h2>
+                <p>Smart wearable technology and accessories.</p>
             </div>
 
         </div>
-
 
         <div class="product-card" data-category="mobile">
 
             <div class="product-image">
-                <div class="product-symbol">📱</div>
+                <div class="product-symbol" aria-hidden="true">📱</div>
             </div>
 
             <div class="product-info">
                 <span>MOBILE</span>
-                <h3>Mobile Accessories</h3>
-                <p>Essential phone accessories</p>
+                <h2>Mobile Accessories</h2>
+                <p>Essential accessories for your smartphone.</p>
             </div>
 
         </div>
 
-
         <div class="product-card" data-category="charger">
 
             <div class="product-image">
-                <div class="product-symbol">🔌</div>
+                <div class="product-symbol" aria-hidden="true">🔌</div>
             </div>
 
             <div class="product-info">
                 <span>ACCESSORIES</span>
-                <h3>Power Accessories</h3>
-                <p>Everyday charging solutions</p>
+                <h2>Power Accessories</h2>
+                <p>Everyday charging solutions for your devices.</p>
             </div>
 
         </div>
@@ -191,7 +264,7 @@
 
 </section>
 
-
+<!-- WHATSAPP CTA -->
 <section class="gallery-cta">
 
     <h2>
@@ -199,20 +272,27 @@
         <span>today's availability?</span>
     </h2>
 
-    <a href="https://wa.me/918291717525"
-       target="_blank"
-       class="btn primary">
+    <a
+        href="https://wa.me/918291717525"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn primary">
+
         Ask on WhatsApp
+
     </a>
 
 </section>
 
-
+<!-- FOOTER -->
 <footer>
 
     <div class="footer-brand">
 
-        <img src="images/logo.jpg" alt="Shiv Adnya">
+        <img
+            src="images/logo.jpg"
+            alt="Shiv Adnya Mobile Shop logo"
+            loading="lazy">
 
         <div>
             <strong>Shiv Adnya</strong>
@@ -222,9 +302,11 @@
     </div>
 
     <div class="footer-links">
+
         <a href="index.html">Home</a>
-        <a href="gallery.html">Gallery</a>
+        <a href="gallery.html" aria-current="page">Gallery</a>
         <a href="contact.html">Contact</a>
+
     </div>
 
     <p class="copyright">
@@ -233,8 +315,8 @@
 
 </footer>
 
-
 <script src="script.js"></script>
 
 </body>
-                  </html>
+    </html>
+    
